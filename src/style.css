@@ -2,7 +2,8 @@ body{
     background-color: blue;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 button{
     background:white;
@@ -11,7 +12,59 @@ button{
     padding: 7px 14px;
     border-radius: 5px;
     color: red;
+    display:block;
+    flex-grow: 1;
 }
 .hello{
     color:red;
+}
+ul{
+    display:block;
+    color:white;
+    /* background-color: grey; */
+}
+li{
+    background-color: green;
+    margin:15px;
+    padding: 25px 35px;
+    position: relative;
+    border-radius: 10px;
+    list-style: none;
+}
+.textarea,.input-titles{
+    display: block;
+    width: 400px;
+}
+.searchHeader{
+    display:flex;
+    width: 400px;
+    background-color: white;
+    border-radius:5px;
+}
+.input-title{
+    border:none;
+    width: 280px;
+    border-radius:5px;
+    padding: 5px 14px;
+}
+.input-checkbox{
+    position:absolute;
+    left:5px;
+    border: none;
+    display: block;
+    height: 20px;
+    width: 20px;
+    accent-color: rgb(227, 50, 50);
+}
+.closeBtn,.close{
+    /* background-image: url(close_btn.png); */
+    position: absolute;
+    right: 3px;
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    top:12px;
+}
+.closeBtn:hover{
+    opacity: 90%;
 }
